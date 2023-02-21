@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QHash</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>  
+  <div class="wrapper">
+    <div class="container">
+      <h1>QHash</h1>
+      <h5 style="text-align: center; opacity: 0.2; margin-top: -20px;"><i>Code by VanQuy</i></h5>
+      <form>
+        <input type="text" id="pass" placeholder="Password">
+        <input type="password" id="key" placeholder="Key">
+        <center>
+          <button type="button" onclick="Encode()"><i class="fa-solid fa-lock"></i>  Encode</button>
+          <button id="toggle-password-visibility" type="button" onclick=togglePasswordVisibility()><i class="fa fa-eye"></i></button>
+          <button type="button" onclick="Decode()"><i class="fa-solid fa-unlock"></i>  Decode</button>
+        </center>
+      </form>
+      <div id="result" style="opacity: .4;"></div>
+    </div>
+    <button class="toggle-dark-mode" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+  </div>
+  <script src="script.js"></script>
+  <script>toggleDarkMode()</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  /* border: 1px solid #ddd; */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+  background-color: #ffffff00;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"], input[type="password"]{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #020019;
+  color: #fff;
+}
+
+.toggle-dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff00;
+  color: #222;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+.toggle-dark-mode i {
+  font-size: 20px;
+}
+
+.toggle-dark-mode.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.toggle-dark-mode.dark-mode i {
+  color: #fff;
+}
