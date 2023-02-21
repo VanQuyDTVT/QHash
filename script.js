@@ -1,6 +1,6 @@
 function togglePasswordVisibility() {
   var input2 = document.getElementById("key");
-  var toggleButton = document.querySelector(".toggle-password-visibility");
+  var toggleButton = document.querySelector("#toggle-password-visibility");
 
   if (input2.type === "password") {
     input2.type = "text";
